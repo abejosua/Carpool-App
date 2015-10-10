@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7526B3F81BBDD85500678C91 /* RideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B3F71BBDD85500678C91 /* RideTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		7526B3FA1BBDDA9300678C91 /* RideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B3F91BBDDA9300678C91 /* RideTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7526B3FE1BBDDE8D00678C91 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B3FD1BBDDE8D00678C91 /* Ride.swift */; settings = {ASSET_TAGS = (); }; };
+		7526B4041BBDF0B400678C91 /* RideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B4031BBDF0B400678C91 /* RideDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7526B4061BBDF25900678C91 /* AddRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B4051BBDF25900678C91 /* AddRideViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		75967C061BBDC16800D84C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75967C051BBDC16800D84C7F /* AppDelegate.swift */; };
+		75967C081BBDC16800D84C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75967C071BBDC16800D84C7F /* ViewController.swift */; };
+		75967C0B1BBDC16800D84C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75967C091BBDC16800D84C7F /* Main.storyboard */; };
+		75967C0D1BBDC16800D84C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75967C0C1BBDC16800D84C7F /* Assets.xcassets */; };
+		75967C101BBDC16800D84C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75967C0E1BBDC16800D84C7F /* LaunchScreen.storyboard */; };
+		75967C1B1BBDC16800D84C7F /* CarpoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75967C1A1BBDC16800D84C7F /* CarpoolTests.swift */; };
+		75967C261BBDC16800D84C7F /* CarpoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75967C251BBDC16800D84C7F /* CarpoolUITests.swift */; };
+		75CE21FA1BC80DCF00B10C18 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE21F91BC80DCF00B10C18 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		75CE21FD1BC8117300B10C18 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE21FC1BC8117300B10C18 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		75CE21FF1BC814DA00B10C18 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE21FE1BC814DA00B10C18 /* FacebookLoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		75CE22011BC9A64200B10C18 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE22001BC9A64200B10C18 /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75967C171BBDC16800D84C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75967BFA1BBDC16800D84C7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75967C011BBDC16800D84C7F;
+			remoteInfo = Carpool;
+		};
+		75967C221BBDC16800D84C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75967BFA1BBDC16800D84C7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75967C011BBDC16800D84C7F;
+			remoteInfo = Carpool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7526B3F71BBDD85500678C91 /* RideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideTableViewCell.swift; sourceTree = "<group>"; };
+		7526B3F91BBDDA9300678C91 /* RideTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideTableViewController.swift; sourceTree = "<group>"; };
+		7526B3FD1BBDDE8D00678C91 /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		7526B4031BBDF0B400678C91 /* RideDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RideDetailViewController.swift; path = ../RideDetailViewController.swift; sourceTree = "<group>"; };
+		7526B4051BBDF25900678C91 /* AddRideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRideViewController.swift; sourceTree = "<group>"; };
+		75967C021BBDC16800D84C7F /* Carpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carpool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75967C051BBDC16800D84C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75967C071BBDC16800D84C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75967C0A1BBDC16800D84C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75967C0C1BBDC16800D84C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75967C0F1BBDC16800D84C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75967C111BBDC16800D84C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75967C161BBDC16800D84C7F /* CarpoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarpoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75967C1A1BBDC16800D84C7F /* CarpoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolTests.swift; sourceTree = "<group>"; };
+		75967C1C1BBDC16800D84C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75967C211BBDC16800D84C7F /* CarpoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarpoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75967C251BBDC16800D84C7F /* CarpoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolUITests.swift; sourceTree = "<group>"; };
+		75967C271BBDC16800D84C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CE21F91BC80DCF00B10C18 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		75CE21FB1BC80E6900B10C18 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		75CE21FC1BC8117300B10C18 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		75CE21FE1BC814DA00B10C18 /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
+		75CE22001BC9A64200B10C18 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75967BFF1BBDC16800D84C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CE21FA1BC80DCF00B10C18 /* FBSDKLoginKit.framework in Frameworks */,
+				75CE21FD1BC8117300B10C18 /* FBSDKCoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75967C131BBDC16800D84C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75967C1E1BBDC16800D84C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75967BF91BBDC16800D84C7F = {
+			isa = PBXGroup;
+			children = (
+				75967C041BBDC16800D84C7F /* Carpool */,
+				75967C191BBDC16800D84C7F /* CarpoolTests */,
+				75967C241BBDC16800D84C7F /* CarpoolUITests */,
+				75967C031BBDC16800D84C7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75967C031BBDC16800D84C7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75967C021BBDC16800D84C7F /* Carpool.app */,
+				75967C161BBDC16800D84C7F /* CarpoolTests.xctest */,
+				75967C211BBDC16800D84C7F /* CarpoolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75967C041BBDC16800D84C7F /* Carpool */ = {
+			isa = PBXGroup;
+			children = (
+				75CE21FC1BC8117300B10C18 /* FBSDKCoreKit.framework */,
+				75CE21F91BC80DCF00B10C18 /* FBSDKLoginKit.framework */,
+				75967C051BBDC16800D84C7F /* AppDelegate.swift */,
+				7526B4031BBDF0B400678C91 /* RideDetailViewController.swift */,
+				7526B3F71BBDD85500678C91 /* RideTableViewCell.swift */,
+				75967C071BBDC16800D84C7F /* ViewController.swift */,
+				75967C091BBDC16800D84C7F /* Main.storyboard */,
+				7526B3F91BBDDA9300678C91 /* RideTableViewController.swift */,
+				7526B3FD1BBDDE8D00678C91 /* Ride.swift */,
+				75967C0C1BBDC16800D84C7F /* Assets.xcassets */,
+				75967C0E1BBDC16800D84C7F /* LaunchScreen.storyboard */,
+				75967C111BBDC16800D84C7F /* Info.plist */,
+				7526B4051BBDF25900678C91 /* AddRideViewController.swift */,
+				75CE21FB1BC80E6900B10C18 /* Bridging-Header.h */,
+				75CE21FE1BC814DA00B10C18 /* FacebookLoginViewController.swift */,
+				75CE22001BC9A64200B10C18 /* ProfileViewController.swift */,
+			);
+			path = Carpool;
+			sourceTree = "<group>";
+		};
+		75967C191BBDC16800D84C7F /* CarpoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				75967C1A1BBDC16800D84C7F /* CarpoolTests.swift */,
+				75967C1C1BBDC16800D84C7F /* Info.plist */,
+			);
+			path = CarpoolTests;
+			sourceTree = "<group>";
+		};
+		75967C241BBDC16800D84C7F /* CarpoolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75967C251BBDC16800D84C7F /* CarpoolUITests.swift */,
+				75967C271BBDC16800D84C7F /* Info.plist */,
+			);
+			path = CarpoolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75967C011BBDC16800D84C7F /* Carpool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75967C2A1BBDC16800D84C7F /* Build configuration list for PBXNativeTarget "Carpool" */;
+			buildPhases = (
+				75967BFE1BBDC16800D84C7F /* Sources */,
+				75967BFF1BBDC16800D84C7F /* Frameworks */,
+				75967C001BBDC16800D84C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Carpool;
+			productName = Carpool;
+			productReference = 75967C021BBDC16800D84C7F /* Carpool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75967C151BBDC16800D84C7F /* CarpoolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75967C2D1BBDC16800D84C7F /* Build configuration list for PBXNativeTarget "CarpoolTests" */;
+			buildPhases = (
+				75967C121BBDC16800D84C7F /* Sources */,
+				75967C131BBDC16800D84C7F /* Frameworks */,
+				75967C141BBDC16800D84C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75967C181BBDC16800D84C7F /* PBXTargetDependency */,
+			);
+			name = CarpoolTests;
+			productName = CarpoolTests;
+			productReference = 75967C161BBDC16800D84C7F /* CarpoolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75967C201BBDC16800D84C7F /* CarpoolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75967C301BBDC16800D84C7F /* Build configuration list for PBXNativeTarget "CarpoolUITests" */;
+			buildPhases = (
+				75967C1D1BBDC16800D84C7F /* Sources */,
+				75967C1E1BBDC16800D84C7F /* Frameworks */,
+				75967C1F1BBDC16800D84C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75967C231BBDC16800D84C7F /* PBXTargetDependency */,
+			);
+			name = CarpoolUITests;
+			productName = CarpoolUITests;
+			productReference = 75967C211BBDC16800D84C7F /* CarpoolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75967BFA1BBDC16800D84C7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = abe;
+				TargetAttributes = {
+					75967C011BBDC16800D84C7F = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					75967C151BBDC16800D84C7F = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 75967C011BBDC16800D84C7F;
+					};
+					75967C201BBDC16800D84C7F = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 75967C011BBDC16800D84C7F;
+					};
+				};
+			};
+			buildConfigurationList = 75967BFD1BBDC16800D84C7F /* Build configuration list for PBXProject "Carpool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75967BF91BBDC16800D84C7F;
+			productRefGroup = 75967C031BBDC16800D84C7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75967C011BBDC16800D84C7F /* Carpool */,
+				75967C151BBDC16800D84C7F /* CarpoolTests */,
+				75967C201BBDC16800D84C7F /* CarpoolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75967C001BBDC16800D84C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75967C101BBDC16800D84C7F /* LaunchScreen.storyboard in Resources */,
+				75967C0D1BBDC16800D84C7F /* Assets.xcassets in Resources */,
+				75967C0B1BBDC16800D84C7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75967C141BBDC16800D84C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75967C1F1BBDC16800D84C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75967BFE1BBDC16800D84C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7526B4041BBDF0B400678C91 /* RideDetailViewController.swift in Sources */,
+				7526B3F81BBDD85500678C91 /* RideTableViewCell.swift in Sources */,
+				75CE21FF1BC814DA00B10C18 /* FacebookLoginViewController.swift in Sources */,
+				75967C081BBDC16800D84C7F /* ViewController.swift in Sources */,
+				75967C061BBDC16800D84C7F /* AppDelegate.swift in Sources */,
+				7526B4061BBDF25900678C91 /* AddRideViewController.swift in Sources */,
+				75CE22011BC9A64200B10C18 /* ProfileViewController.swift in Sources */,
+				7526B3FE1BBDDE8D00678C91 /* Ride.swift in Sources */,
+				7526B3FA1BBDDA9300678C91 /* RideTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75967C121BBDC16800D84C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75967C1B1BBDC16800D84C7F /* CarpoolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75967C1D1BBDC16800D84C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75967C261BBDC16800D84C7F /* CarpoolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75967C181BBDC16800D84C7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75967C011BBDC16800D84C7F /* Carpool */;
+			targetProxy = 75967C171BBDC16800D84C7F /* PBXContainerItemProxy */;
+		};
+		75967C231BBDC16800D84C7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75967C011BBDC16800D84C7F /* Carpool */;
+			targetProxy = 75967C221BBDC16800D84C7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75967C091BBDC16800D84C7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75967C0A1BBDC16800D84C7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75967C0E1BBDC16800D84C7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75967C0F1BBDC16800D84C7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75967C281BBDC16800D84C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75967C291BBDC16800D84C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75967C2B1BBDC16800D84C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = /Users/abejosua/Documents/FacebookSDK;
+				INFOPLIST_FILE = Carpool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MM.Carpool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carpool/Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		75967C2C1BBDC16800D84C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = /Users/abejosua/Documents/FacebookSDK;
+				INFOPLIST_FILE = Carpool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MM.Carpool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carpool/Bridging-Header.h";
+			};
+			name = Release;
+		};
+		75967C2E1BBDC16800D84C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CarpoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MM.CarpoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carpool.app/Carpool";
+			};
+			name = Debug;
+		};
+		75967C2F1BBDC16800D84C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CarpoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MM.CarpoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carpool.app/Carpool";
+			};
+			name = Release;
+		};
+		75967C311BBDC16800D84C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CarpoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MM.CarpoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Carpool;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		75967C321BBDC16800D84C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CarpoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MM.CarpoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Carpool;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75967BFD1BBDC16800D84C7F /* Build configuration list for PBXProject "Carpool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75967C281BBDC16800D84C7F /* Debug */,
+				75967C291BBDC16800D84C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75967C2A1BBDC16800D84C7F /* Build configuration list for PBXNativeTarget "Carpool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75967C2B1BBDC16800D84C7F /* Debug */,
+				75967C2C1BBDC16800D84C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75967C2D1BBDC16800D84C7F /* Build configuration list for PBXNativeTarget "CarpoolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75967C2E1BBDC16800D84C7F /* Debug */,
+				75967C2F1BBDC16800D84C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75967C301BBDC16800D84C7F /* Build configuration list for PBXNativeTarget "CarpoolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75967C311BBDC16800D84C7F /* Debug */,
+				75967C321BBDC16800D84C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75967BFA1BBDC16800D84C7F /* Project object */;
+}
