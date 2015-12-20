@@ -84,9 +84,12 @@ class SignUpController: UIViewController {
     }
     
     private func displayAlert(alert: String) {
-        let alert = UIAlertController(title: "Alert", message: alert, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        var alertView:UIAlertView = UIAlertView()
+        alertView.title = "Sign Up Failed!"
+        alertView.message = alert
+        alertView.delegate = self
+        alertView.addButtonWithTitle("OK")
+        alertView.show()
     }
     
     func createUser(fname: String, lname: String, username: String, email: String) {

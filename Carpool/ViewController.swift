@@ -20,10 +20,11 @@ class ViewController: UIViewController {
 
     @IBAction func signUpButtonPressed(sender: AnyObject) {
         if fieldsIsBlank() {
-            displayAlert()
+            displayAlert("Fill all the fields correctly!")
         } else {
-            // Proceed
-            performSegueWithIdentifier("logInSegue", sender: self)
+            if let username = self.username.text, password = self.password.text {
+                makeLogInRequest(username, password: password)
+            }
         }
     }
     private func fieldsIsBlank() -> Bool {
@@ -34,8 +35,53 @@ class ViewController: UIViewController {
         }
         
     }
-    private func displayAlert() {
-        let alert = UIAlertController(title: "Alert", message: "Fill all the fields!", preferredStyle: UIAlertControllerStyle.Alert)
+    
+    func makeLogInRequest(username:String, password:String) {
+        
+        let json = ["username": "\(username)","password": "\(password)"]
+        
+        let jsonData = try? NSJSONSerialization.dataWithJSONObject(json, options: .PrettyPrinted)
+        
+        // create post request
+        let url = NSURL(string: "https://carpool-humanoid-staging.herokuapp.com/login")!
+        let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        // insert json data to the request
+        request.HTTPBody = jsonData
+        
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request){ data,response,error in
+            
+            if let responseJSON = try? NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? [String:AnyObject]{
+                print(responseJSON)
+            }
+            if let httpResponse = response as? NSHTTPURLResponse {
+                switch(httpResponse.statusCode) {
+                case 200: //success
+                    print(httpResponse.statusCode)
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.performSegueWithIdentifier("logInSegue", sender: self)
+                    }
+                default:
+                    print("GET Request unsuccessful. HTTP Status Code: \(httpResponse.statusCode)")
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.displayAlert("Username and Password doesn't match")
+                    }
+                }
+            } else {
+                print("Not a valid http response. NetworkOperation:downloadJSONFromURL()")
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.displayAlert("Server is down")
+                }
+            }
+        }
+        
+        task.resume()
+    }
+    
+    private func displayAlert(alert: String) {
+        let alert = UIAlertController(title: "Alert", message: alert, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
