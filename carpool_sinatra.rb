@@ -2,8 +2,6 @@ require 'sinatra'
 require 'sqlite3'
 require 'json'
 
-
-
 get '/users' do
 	db = SQLite3::Database.open "carpool.db.sqlite"
 	users = db.execute ("SELECT * FROM users")

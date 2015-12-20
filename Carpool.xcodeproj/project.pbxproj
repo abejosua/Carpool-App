@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7526B3F81BBDD85500678C91 /* RideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B3F71BBDD85500678C91 /* RideTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		7526B3FA1BBDDA9300678C91 /* RideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B3F91BBDDA9300678C91 /* RideTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7526B3FE1BBDDE8D00678C91 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B3FD1BBDDE8D00678C91 /* Ride.swift */; settings = {ASSET_TAGS = (); }; };
-		7526B4041BBDF0B400678C91 /* RideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B4031BBDF0B400678C91 /* RideDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		7526B4061BBDF25900678C91 /* AddRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B4051BBDF25900678C91 /* AddRideViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7526B3F81BBDD85500678C91 /* RideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B3F71BBDD85500678C91 /* RideTableViewCell.swift */; };
+		7526B3FA1BBDDA9300678C91 /* RideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B3F91BBDDA9300678C91 /* RideTableViewController.swift */; };
+		7526B3FE1BBDDE8D00678C91 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B3FD1BBDDE8D00678C91 /* Ride.swift */; };
+		7526B4041BBDF0B400678C91 /* RideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B4031BBDF0B400678C91 /* RideDetailViewController.swift */; };
+		7526B4061BBDF25900678C91 /* AddRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B4051BBDF25900678C91 /* AddRideViewController.swift */; };
+		7594BE9B1C260AD70041BE45 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594BE9A1C260AD70041BE45 /* SignUpController.swift */; };
+		7594BE9F1C2624360041BE45 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594BE9E1C2624360041BE45 /* HTTPHelper.swift */; };
 		75967C061BBDC16800D84C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75967C051BBDC16800D84C7F /* AppDelegate.swift */; };
 		75967C081BBDC16800D84C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75967C071BBDC16800D84C7F /* ViewController.swift */; };
 		75967C0B1BBDC16800D84C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75967C091BBDC16800D84C7F /* Main.storyboard */; };
@@ -19,10 +21,10 @@
 		75967C101BBDC16800D84C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75967C0E1BBDC16800D84C7F /* LaunchScreen.storyboard */; };
 		75967C1B1BBDC16800D84C7F /* CarpoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75967C1A1BBDC16800D84C7F /* CarpoolTests.swift */; };
 		75967C261BBDC16800D84C7F /* CarpoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75967C251BBDC16800D84C7F /* CarpoolUITests.swift */; };
-		75CE21FA1BC80DCF00B10C18 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE21F91BC80DCF00B10C18 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
-		75CE21FD1BC8117300B10C18 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE21FC1BC8117300B10C18 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
-		75CE21FF1BC814DA00B10C18 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE21FE1BC814DA00B10C18 /* FacebookLoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		75CE22011BC9A64200B10C18 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE22001BC9A64200B10C18 /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		75CE21FA1BC80DCF00B10C18 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE21F91BC80DCF00B10C18 /* FBSDKLoginKit.framework */; };
+		75CE21FD1BC8117300B10C18 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CE21FC1BC8117300B10C18 /* FBSDKCoreKit.framework */; };
+		75CE21FF1BC814DA00B10C18 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE21FE1BC814DA00B10C18 /* FacebookLoginViewController.swift */; };
+		75CE22011BC9A64200B10C18 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE22001BC9A64200B10C18 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		7526B3FD1BBDDE8D00678C91 /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		7526B4031BBDF0B400678C91 /* RideDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RideDetailViewController.swift; path = ../RideDetailViewController.swift; sourceTree = "<group>"; };
 		7526B4051BBDF25900678C91 /* AddRideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRideViewController.swift; sourceTree = "<group>"; };
+		7594BE9A1C260AD70041BE45 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		7594BE9E1C2624360041BE45 /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
 		75967C021BBDC16800D84C7F /* Carpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carpool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75967C051BBDC16800D84C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75967C071BBDC16800D84C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				75CE21FB1BC80E6900B10C18 /* Bridging-Header.h */,
 				75CE21FE1BC814DA00B10C18 /* FacebookLoginViewController.swift */,
 				75CE22001BC9A64200B10C18 /* ProfileViewController.swift */,
+				7594BE9A1C260AD70041BE45 /* SignUpController.swift */,
+				7594BE9E1C2624360041BE45 /* HTTPHelper.swift */,
 			);
 			path = Carpool;
 			sourceTree = "<group>";
@@ -291,8 +297,10 @@
 				75CE21FF1BC814DA00B10C18 /* FacebookLoginViewController.swift in Sources */,
 				75967C081BBDC16800D84C7F /* ViewController.swift in Sources */,
 				75967C061BBDC16800D84C7F /* AppDelegate.swift in Sources */,
+				7594BE9B1C260AD70041BE45 /* SignUpController.swift in Sources */,
 				7526B4061BBDF25900678C91 /* AddRideViewController.swift in Sources */,
 				75CE22011BC9A64200B10C18 /* ProfileViewController.swift in Sources */,
+				7594BE9F1C2624360041BE45 /* HTTPHelper.swift in Sources */,
 				7526B3FE1BBDDE8D00678C91 /* Ride.swift in Sources */,
 				7526B3FA1BBDDA9300678C91 /* RideTableViewController.swift in Sources */,
 			);
