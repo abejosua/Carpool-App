@@ -10,11 +10,13 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+
+    @IBOutlet weak var username: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        username.text = "Welcome " + user.username + "!"
         // Do any additional setup after loading the view.
     }
 
@@ -24,14 +26,8 @@ class ProfileViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func logOut(sender: AnyObject) {
+        is_active = false
+        self.performSegueWithIdentifier("logoutsegue", sender: self)
     }
-    */
-
 }

@@ -84,7 +84,7 @@ class SignUpController: UIViewController {
     }
     
     private func displayAlert(alert: String) {
-        var alertView:UIAlertView = UIAlertView()
+        let alertView:UIAlertView = UIAlertView()
         alertView.title = "Sign Up Failed!"
         alertView.message = alert
         alertView.delegate = self
@@ -92,8 +92,5 @@ class SignUpController: UIViewController {
         alertView.show()
     }
     
-    func createUser(fname: String, lname: String, username: String, email: String) {
-        
-    }
 }
 

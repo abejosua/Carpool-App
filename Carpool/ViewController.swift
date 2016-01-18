@@ -8,6 +8,11 @@
 
 import UIKit
 
+var user: User!
+var is_active = false
+
+let weburl = "https://carpool-humanoid-staging.herokuapp.com"
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
@@ -54,13 +59,24 @@ class ViewController: UIViewController {
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request){ data,response,error in
             
             if let responseJSON = try? NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? [String:AnyObject]{
-                print(responseJSON)
+                if let jsonDictionary = responseJSON, userDictionary = jsonDictionary["user"] {
+                    print(userDictionary)
+                    if let fname = userDictionary["first_name"],
+                        lname = userDictionary["last_name"],
+                        username = userDictionary["username"],
+                        email = userDictionary["email"],
+                        id = userDictionary["id"]{
+                            user = User(fname: fname as! String, lname: lname as! String, username: username as! String, email: email as! String)
+                            user.id = id as! Int
+                    }
+                }
             }
             if let httpResponse = response as? NSHTTPURLResponse {
                 switch(httpResponse.statusCode) {
                 case 200: //success
                     print(httpResponse.statusCode)
                     dispatch_async(dispatch_get_main_queue()) {
+                        is_active = true
                         self.performSegueWithIdentifier("logInSegue", sender: self)
                     }
                 default:
@@ -90,6 +106,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "logInSegue") {
+        }
+    }
+    
+    
 
 
 }
