@@ -15,12 +15,45 @@ class SignUpController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // sets up corner radius
+        let borderWidth = CGFloat(1.0)
+        let cornerRadius = CGFloat(8.0)
+        let borderColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.3).CGColor
+        first_name.layer.borderWidth = borderWidth
+        first_name.layer.cornerRadius = cornerRadius
+        first_name.layer.borderColor = borderColor
+        
+        last_name.layer.borderWidth = borderWidth
+        last_name.layer.cornerRadius = cornerRadius
+        last_name.layer.borderColor = borderColor
+        
+        username.layer.borderWidth = borderWidth
+        username.layer.cornerRadius = cornerRadius
+        username.layer.borderColor = borderColor
+        
+        email.layer.borderWidth = borderWidth
+        email.layer.cornerRadius = cornerRadius
+        email.layer.borderColor = borderColor
+        
+        password.layer.borderWidth = borderWidth
+        password.layer.cornerRadius = cornerRadius
+        password.layer.borderColor = borderColor
+        
+        signupButton.layer.cornerRadius = cornerRadius
+
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func backToLoginView(sender: AnyObject) {
+        performSegueWithIdentifier("backtologinsegue", sender: self)
+    }
+
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         super.touchesBegan(touches, withEvent: event)
     }

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3fE-QH-eay">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Campton-LightDEMO.otf">
+            <string>Campton-LightDEMO</string>
+            <string>Campton-LightDEMO</string>
+            <string>Campton-LightDEMO</string>
+            <string>Campton-LightDEMO</string>
+            <string>Campton-LightDEMO</string>
             <string>Campton-LightDEMO</string>
             <string>Campton-LightDEMO</string>
             <string>Campton-LightDEMO</string>
@@ -38,7 +43,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsQ-aq-VIB">
-                                <rect key="frame" x="157" y="397" width="286" height="43"/>
+                                <rect key="frame" x="150" y="385" width="300" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="18"/>
                                 <color key="tintColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -48,10 +53,10 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwa-Jg-pSj">
-                                <rect key="frame" x="157" y="329" width="286" height="43"/>
+                                <rect key="frame" x="150" y="305" width="300" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="286" id="oKT-v6-dy3"/>
-                                    <constraint firstAttribute="height" constant="43" id="rhi-dE-cNN"/>
+                                    <constraint firstAttribute="width" constant="300" id="oKT-v6-dy3"/>
+                                    <constraint firstAttribute="height" constant="55" id="rhi-dE-cNN"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="18"/>
@@ -64,19 +69,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J3U-Ob-qsD">
-                                <rect key="frame" x="157" y="267" width="286" height="43"/>
+                                <rect key="frame" x="150" y="231" width="300" height="55"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJW-f2-ozY">
-                                <rect key="frame" x="157" y="477" width="286" height="43"/>
+                                <rect key="frame" x="150" y="477" width="300" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="18"/>
                                 <color key="tintColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="SIGN UP NOW"/>
                                 <connections>
-                                    <segue destination="3fE-QH-eay" kind="presentation" id="Stw-y6-uGT"/>
+                                    <segue destination="3fE-QH-eay" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Stw-y6-uGT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -198,101 +203,145 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-qL-rQT">
-                                <rect key="frame" x="254" y="28" width="92" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knm-hg-ycs">
-                                <rect key="frame" x="26" y="550" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="3rV-XT-OB5"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OneMore_Register_background" translatesAutoresizingMaskIntoConstraints="NO" id="Rua-vp-kS3">
+                                <rect key="frame" x="4" y="0.0" width="592" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9r-Ld-bXV">
-                                <rect key="frame" x="273" y="550" width="55" height="30"/>
-                                <state key="normal" title="Sign Up"/>
+                                <rect key="frame" x="150" y="525" width="300" height="55"/>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.42745098039215684" green="0.10588235294117647" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="SignUpNewUser:" destination="3fE-QH-eay" eventType="touchUpInside" id="l9V-0O-mOH"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="first name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-qp-ATV">
-                                <rect key="frame" x="225" y="185" width="150" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="first name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-qp-ATV">
+                                <rect key="frame" x="150" y="122" width="300" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="kDR-Mf-7vJ"/>
+                                    <constraint firstAttribute="width" constant="300" id="kDR-Mf-7vJ"/>
+                                    <constraint firstAttribute="height" constant="55" id="plh-hC-5Gb"/>
                                     <constraint firstAttribute="width" constant="150" id="r9w-dK-LVe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="r9w-dK-LVe"/>
+                                    </mask>
+                                </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="last name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0p-rS-PmO">
-                                <rect key="frame" x="225" y="235" width="150" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="last name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0p-rS-PmO">
+                                <rect key="frame" x="150" y="197" width="300" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="JAE-S9-Cpj"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="VsS-Mf-B7q"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JAE-S9-Cpj"/>
+                                        <exclude reference="VsS-Mf-B7q"/>
+                                    </mask>
+                                </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opc-5O-po3">
-                                <rect key="frame" x="225" y="385" width="150" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="opc-5O-po3">
+                                <rect key="frame" x="150" y="422" width="300" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="XJI-id-FIu"/>
                                     <constraint firstAttribute="width" constant="150" id="erL-x1-EcO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XJI-id-FIu"/>
+                                        <exclude reference="erL-x1-EcO"/>
+                                    </mask>
+                                </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTA-DS-4vM">
-                                <rect key="frame" x="225" y="335" width="150" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTA-DS-4vM">
+                                <rect key="frame" x="150" y="347" width="300" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="V3C-8b-msu"/>
                                     <constraint firstAttribute="width" constant="150" id="pgC-UC-pSJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="V3C-8b-msu"/>
+                                        <exclude reference="pgC-UC-pSJ"/>
+                                    </mask>
+                                </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9a-lR-gUj">
-                                <rect key="frame" x="225" y="285" width="150" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9a-lR-gUj">
+                                <rect key="frame" x="150" y="272" width="300" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="uQR-gA-nq0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="uQR-gA-nq0"/>
+                                    </mask>
+                                </variation>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Knm-hg-ycs" firstAttribute="leading" secondItem="3M8-ie-lwQ" secondAttribute="leadingMargin" constant="6" id="4Dr-f0-bIq"/>
-                            <constraint firstItem="UFL-qL-rQT" firstAttribute="top" secondItem="Kqk-T4-Kj0" secondAttribute="bottom" constant="8" id="Ehc-3w-YXB"/>
-                            <constraint firstItem="0OS-MS-Hmz" firstAttribute="top" secondItem="Knm-hg-ycs" secondAttribute="bottom" constant="20" id="FQJ-yS-Jec"/>
+                            <constraint firstItem="f9a-lR-gUj" firstAttribute="width" secondItem="U0p-rS-PmO" secondAttribute="width" id="7Zs-iW-K7i"/>
                             <constraint firstItem="opc-5O-po3" firstAttribute="top" secondItem="kTA-DS-4vM" secondAttribute="bottom" constant="20" id="Gpt-yM-prV"/>
                             <constraint firstItem="0OS-MS-Hmz" firstAttribute="top" secondItem="J9r-Ld-bXV" secondAttribute="bottom" constant="20" id="HYX-8M-LRg"/>
+                            <constraint firstItem="opc-5O-po3" firstAttribute="height" secondItem="YhK-qp-ATV" secondAttribute="height" id="IPb-EX-Js3"/>
+                            <constraint firstItem="J9r-Ld-bXV" firstAttribute="width" secondItem="YhK-qp-ATV" secondAttribute="width" id="KJF-go-baI"/>
+                            <constraint firstItem="Rua-vp-kS3" firstAttribute="top" secondItem="3M8-ie-lwQ" secondAttribute="topMargin" id="Kaw-eB-58M"/>
                             <constraint firstItem="U0p-rS-PmO" firstAttribute="top" secondItem="YhK-qp-ATV" secondAttribute="bottom" constant="20" id="LKw-px-dWF"/>
                             <constraint firstItem="f9a-lR-gUj" firstAttribute="centerY" secondItem="3M8-ie-lwQ" secondAttribute="centerY" id="Mvc-7I-EdG"/>
+                            <constraint firstItem="f9a-lR-gUj" firstAttribute="height" secondItem="U0p-rS-PmO" secondAttribute="height" id="O4W-yM-c3v"/>
                             <constraint firstItem="f9a-lR-gUj" firstAttribute="centerX" secondItem="3M8-ie-lwQ" secondAttribute="centerX" id="Sxa-Ne-gon"/>
                             <constraint firstItem="opc-5O-po3" firstAttribute="centerX" secondItem="3M8-ie-lwQ" secondAttribute="centerX" id="UCO-hs-8mq"/>
+                            <constraint firstItem="Rua-vp-kS3" firstAttribute="leading" secondItem="3M8-ie-lwQ" secondAttribute="leadingMargin" constant="-16" id="dVV-pa-AfZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rua-vp-kS3" secondAttribute="trailing" constant="-16" id="dbz-GQ-Cwg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Rua-vp-kS3" secondAttribute="bottom" id="fbN-FY-UrV"/>
                             <constraint firstItem="YhK-qp-ATV" firstAttribute="centerX" secondItem="3M8-ie-lwQ" secondAttribute="centerX" id="hTI-uW-rBq"/>
                             <constraint firstItem="kTA-DS-4vM" firstAttribute="centerX" secondItem="3M8-ie-lwQ" secondAttribute="centerX" id="jyF-bV-y9S"/>
-                            <constraint firstItem="UFL-qL-rQT" firstAttribute="centerX" secondItem="3M8-ie-lwQ" secondAttribute="centerX" id="k0v-kF-kHp"/>
+                            <constraint firstItem="kTA-DS-4vM" firstAttribute="height" secondItem="YhK-qp-ATV" secondAttribute="height" id="kbf-LI-O8J"/>
+                            <constraint firstItem="opc-5O-po3" firstAttribute="width" secondItem="YhK-qp-ATV" secondAttribute="width" id="mky-st-yh5"/>
                             <constraint firstItem="U0p-rS-PmO" firstAttribute="centerX" secondItem="3M8-ie-lwQ" secondAttribute="centerX" id="noA-rD-Tap"/>
+                            <constraint firstItem="U0p-rS-PmO" firstAttribute="height" secondItem="YhK-qp-ATV" secondAttribute="height" id="p2T-fJ-qaq"/>
+                            <constraint firstItem="J9r-Ld-bXV" firstAttribute="height" secondItem="YhK-qp-ATV" secondAttribute="height" id="tSF-aH-9Dx"/>
                             <constraint firstItem="J9r-Ld-bXV" firstAttribute="centerX" secondItem="3M8-ie-lwQ" secondAttribute="centerX" id="uZG-y7-bW5"/>
                             <constraint firstItem="kTA-DS-4vM" firstAttribute="top" secondItem="f9a-lR-gUj" secondAttribute="bottom" constant="20" id="voY-rZ-H4Z"/>
                             <constraint firstItem="f9a-lR-gUj" firstAttribute="top" secondItem="U0p-rS-PmO" secondAttribute="bottom" constant="20" id="wt4-pv-K5F"/>
+                            <constraint firstItem="U0p-rS-PmO" firstAttribute="width" secondItem="YhK-qp-ATV" secondAttribute="width" id="wvw-0d-das"/>
+                            <constraint firstItem="kTA-DS-4vM" firstAttribute="width" secondItem="YhK-qp-ATV" secondAttribute="width" id="xHV-C9-Vod"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Fxy-re-KTT" appends="YES" id="CJ8-XJ-OsP"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="email" destination="kTA-DS-4vM" id="rUo-4h-Rc6"/>
                         <outlet property="first_name" destination="YhK-qp-ATV" id="jk4-iW-7d5"/>
                         <outlet property="last_name" destination="U0p-rS-PmO" id="noe-eF-iLs"/>
                         <outlet property="password" destination="opc-5O-po3" id="1g4-KZ-Tap"/>
+                        <outlet property="signupButton" destination="J9r-Ld-bXV" id="hKT-F0-yDc"/>
                         <outlet property="username" destination="f9a-lR-gUj" id="jc1-Lg-Znd"/>
                         <segue destination="dAC-er-tfN" kind="presentation" identifier="signupsegue" id="gBP-od-KHq"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="backtologinsegue" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="yWy-Xb-Fjj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5g1-lU-10u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="Fxy-re-KTT">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="backToLoginView:" destination="3fE-QH-eay" id="xIv-po-2GP"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="432" y="1093"/>
         </scene>
@@ -677,12 +726,6 @@
                                     <segue destination="CWW-o4-qL4" kind="presentation" id="d2M-gH-6dd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofR-tZ-DUo">
-                                <rect key="frame" x="257" y="512" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -821,11 +864,12 @@
         <image name="Location" width="144" height="144"/>
         <image name="OneMore_Login_OneMore_logo" width="750" height="1334"/>
         <image name="OneMore_Login_background" width="750" height="1334"/>
+        <image name="OneMore_Register_background" width="750" height="1334"/>
         <image name="PersonIcon" width="649" height="659"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="o2l-Zq-w6B"/>
+        <segue reference="3vH-PJ-x4p"/>
         <segue reference="AqU-9Y-12Z"/>
-        <segue reference="9up-CH-cUE"/>
+        <segue reference="InY-qS-XvR"/>
     </inferredMetricsTieBreakers>
 </document>
