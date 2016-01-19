@@ -13,6 +13,8 @@
 		7526B4041BBDF0B400678C91 /* RideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B4031BBDF0B400678C91 /* RideDetailViewController.swift */; };
 		7526B4061BBDF25900678C91 /* AddRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B4051BBDF25900678C91 /* AddRideViewController.swift */; };
 		75525ADB1C4C8A4C00789C25 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75525ADA1C4C8A4C00789C25 /* User.swift */; };
+		757B918A1C4DC28400918707 /* Campton-BoldDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757B91871C4DC28400918707 /* Campton-BoldDEMO.otf */; };
+		757B918B1C4DC28400918707 /* Campton-LightDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 757B91881C4DC28400918707 /* Campton-LightDEMO.otf */; };
 		7594BE9B1C260AD70041BE45 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594BE9A1C260AD70041BE45 /* SignUpController.swift */; };
 		7594BE9F1C2624360041BE45 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594BE9E1C2624360041BE45 /* HTTPHelper.swift */; };
 		75967C061BBDC16800D84C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75967C051BBDC16800D84C7F /* AppDelegate.swift */; };
@@ -52,6 +54,9 @@
 		7526B4031BBDF0B400678C91 /* RideDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RideDetailViewController.swift; path = ../RideDetailViewController.swift; sourceTree = "<group>"; };
 		7526B4051BBDF25900678C91 /* AddRideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRideViewController.swift; sourceTree = "<group>"; };
 		75525ADA1C4C8A4C00789C25 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		757B91871C4DC28400918707 /* Campton-BoldDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Campton-BoldDEMO.otf"; sourceTree = "<group>"; };
+		757B91881C4DC28400918707 /* Campton-LightDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Campton-LightDEMO.otf"; sourceTree = "<group>"; };
+		757B91891C4DC28400918707 /* EULA Free Font License Ver. 2.0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "EULA Free Font License Ver. 2.0.pdf"; sourceTree = "<group>"; };
 		7594BE9A1C260AD70041BE45 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		7594BE9E1C2624360041BE45 /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
 		75967C021BBDC16800D84C7F /* Carpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carpool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		757B91861C4DC28400918707 /* Fonts_Campton */ = {
+			isa = PBXGroup;
+			children = (
+				757B91871C4DC28400918707 /* Campton-BoldDEMO.otf */,
+				757B91881C4DC28400918707 /* Campton-LightDEMO.otf */,
+				757B91891C4DC28400918707 /* EULA Free Font License Ver. 2.0.pdf */,
+			);
+			path = Fonts_Campton;
+			sourceTree = SOURCE_ROOT;
+		};
 		75967BF91BBDC16800D84C7F = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +149,7 @@
 				75967C091BBDC16800D84C7F /* Main.storyboard */,
 				7526B3F91BBDDA9300678C91 /* RideTableViewController.swift */,
 				7526B3FD1BBDDE8D00678C91 /* Ride.swift */,
+				757B91861C4DC28400918707 /* Fonts_Campton */,
 				75967C0C1BBDC16800D84C7F /* Assets.xcassets */,
 				75967C0E1BBDC16800D84C7F /* LaunchScreen.storyboard */,
 				75967C111BBDC16800D84C7F /* Info.plist */,
@@ -268,6 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757B918A1C4DC28400918707 /* Campton-BoldDEMO.otf in Resources */,
+				757B918B1C4DC28400918707 /* Campton-LightDEMO.otf in Resources */,
 				75967C101BBDC16800D84C7F /* LaunchScreen.storyboard in Resources */,
 				75967C0D1BBDC16800D84C7F /* Assets.xcassets in Resources */,
 				75967C0B1BBDC16800D84C7F /* Main.storyboard in Resources */,

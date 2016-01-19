@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,27 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carpool App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3L-M5-gBK">
-                                <rect key="frame" x="182" y="265" width="236" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="236" id="b3d-gI-G90"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Landing Page" translatesAutoresizingMaskIntoConstraints="NO" id="ktX-nu-r0e">
+                                <rect key="frame" x="4" y="0.0" width="592" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="K3L-M5-gBK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1F2-bT-2TJ"/>
-                            <constraint firstItem="K3L-M5-gBK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VSY-y8-t8u"/>
-                            <constraint firstItem="K3L-M5-gBK" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="245" id="YC7-D0-7nV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ktX-nu-r0e" secondAttribute="bottom" id="2IM-uf-5Cn"/>
+                            <constraint firstItem="ktX-nu-r0e" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="No4-Xf-2nG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ktX-nu-r0e" secondAttribute="trailing" constant="-16" id="Z1H-AN-3Lx"/>
+                            <constraint firstItem="ktX-nu-r0e" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="xuX-Eu-r4m"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="49" y="383"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Landing Page" width="750" height="1334"/>
+    </resources>
 </document>

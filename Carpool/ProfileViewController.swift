@@ -12,11 +12,12 @@ class ProfileViewController: UIViewController {
 
 
     @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var name: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        username.text = "Welcome " + user.username + "!"
+        name.text = "Welcome " + user.fname + " " + user.lname + "!"
+        username.text = "Your username is: " + user.username
         // Do any additional setup after loading the view.
     }
 

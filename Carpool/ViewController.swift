@@ -17,12 +17,36 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // sets up rounded borders for textfields and buttons
+        username.layer.cornerRadius = 8.0
+        username.layer.borderColor = UIColor.whiteColor().CGColor
+        username.layer.borderWidth = 1.0
+        username.clipsToBounds = true
+        
+        password.layer.cornerRadius = 8.0
+        password.layer.borderColor = UIColor.whiteColor().CGColor
+        password.layer.borderWidth = 1.0
+        password.clipsToBounds = true
+        
+        loginButton.layer.cornerRadius = 8.0
+        signupButton.layer.cornerRadius = 8.0
+        
+        // changes placeholder color
+        let strUsernamePlaceholder = NSAttributedString(string: "username", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
+        username.attributedPlaceholder = strUsernamePlaceholder
+        
+        let strPasswordPlaceholder = NSAttributedString(string: "password", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
+        password.attributedPlaceholder = strPasswordPlaceholder
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     @IBAction func signUpButtonPressed(sender: AnyObject) {
         if fieldsIsBlank() {
             displayAlert("Fill all the fields correctly!")
